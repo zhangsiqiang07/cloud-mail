@@ -11,6 +11,7 @@ enabled = true
 binding = "db"
 database_name = "email"
 database_id = "c4e1144a-5d3f-4a04-bdaa-801a1c497bf0"
+migrations_dir = "migrations"
 
 [[kv_namespaces]]
 binding = "kv"
