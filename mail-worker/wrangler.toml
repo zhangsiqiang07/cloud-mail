@@ -6,14 +6,15 @@ keep_vars = true
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
+# Keep existing storage bindings explicit so automated builds preserve them.
+[[d1_databases]]
+binding = "db"
+database_name = "email"
+database_id = "c4e1144a-5d3f-4a04-bdaa-801a1c497bf0"
 
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
+[[kv_namespaces]]
+binding = "kv"
+id = "2a918d7938b74ba0bd286084694e3088"
 
 #[[r2_buckets]]
 #binding = "r2"			#r2对象存储绑定名默认不可修改
